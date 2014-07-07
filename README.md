@@ -55,6 +55,5 @@ and add the following code at the end of the `<body>` tag
 	});
 });
 </script>
-
 ```
 
