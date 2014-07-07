@@ -6,9 +6,9 @@ A modified version of mstrehse's Honeycombs jQuery Plugin. It produces responsiv
 ![Demo Image](https://raw.githubusercontent.com/Tiotao/honeycombs/master/demo.png)
 
 ## Original
-Author: mstrehse
-Repo: https://github.com/mstrehse/honeycombs
-Example: http://examples.rabbid.net/honeycombs/demo.html
+- Author: mstrehse
+- Repo: https://github.com/mstrehse/honeycombs
+- Example: http://examples.rabbid.net/honeycombs/demo.html
 
 ## Modifications
 - No longer support hexagon with background image as the hexagon is now made by iconic font rather than CSS.
