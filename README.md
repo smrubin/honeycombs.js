@@ -3,20 +3,22 @@ Honeycombs.js
 
 A modified version of mstrehse's Honeycombs jQuery Plugin. It produces responsive hexagon grids.
 
-# Original
+![Demo Image](https://raw.githubusercontent.com/Tiotao/honeycombs/master/demo.png)
+
+## Original
 Author: mstrehse
 Repo: https://github.com/mstrehse/honeycombs
 Example: http://examples.rabbid.net/honeycombs/demo.html
 
-# Modifications
+## Modifications
 - No longer support hexagon with background image as the hexagon is now made by iconic font rather than CSS.
 
-# Improvements
+## Improvements
 - Support IE8
 - Responsive for single column orientation (in mobile screens)
 - placehoder class provides more flexibility in arranging hexagons.
 
-# Usage
+## Usage
 To generate a honeycomb grid, use the following markup:
 
 ```
