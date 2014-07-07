@@ -1,38 +1,58 @@
-Honeycombs jQuery Plugin
+Honeycombs.js
 ========================
 
+A modified version of mstrehse's Honeycombs jQuery Plugin. It produces responsive hexagon grids.
 
-**Warning: I dont have the time to support this plugin. If you want to use it, use it at your own risk and if you want aditional functionality, feel free to fork the project and extend it. If you want to maintain this plugin feel free to contact me.**
-
-
+# Original
+Author: mstrehse
+Repo: https://github.com/mstrehse/honeycombs
 Example: http://examples.rabbid.net/honeycombs/demo.html
 
-jQuery plugin for displaying images in a responsive honeycomb grid with caption support
+# Modifications
+- No longer support hexagon with background image as the hexagon is now made by iconic font rather than CSS.
 
+# Improvements
+- Support IE8
+- Responsive for single column orientation (in mobile screens)
+- placehoder class provides more flexibility in arranging hexagons.
+
+# Usage
 To generate a honeycomb grid, use the following markup:
 
 ```
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="homeycombs/js/jquery.homeycombs.js"></script>
-
+<script src="honeycombs/js/jquery.honeycombs.js"></script>
+<link rel="stylesheet" type="text/css" href="honeycombs/css/honeycombs.css" />
 <div class="honeycombs">
 		<div class="comb">
-			<img src="images/picture_0.jpg" />
-			<span><b>This is</b><br> a test</span>
+			<div class="front-content">
+				<p>I am a front title</p>
+			</div>
+			<div class="back-content">
+				<p>I am a back title</p>
+			</div>
 		</div>
 		<div class="comb">
-			<img src="images/picture_1.jpg" />
-			<span><b>This is</b><br> a test</span>
+			<div class="front-content">
+				<p>I am a front title</p>
+			</div>
+			<div class="back-content">
+				<p>I am a back title</p>
+			</div>
 		</div>
 </div>
 ```
-
-If you want to assign the honeycomb plugin to another class but .honeycomb, use the following snipped inside a javascript file:
+and add the following code at the end of the `<body>` tag
 
 ```
-(function($) {
+<script>
 	$(document).ready(function() {
-        $('.honeycombs').honeycombs();
-    });
-}(jQuery));
+	$('.honeycombs').honeycombs({
+		combWidth:250,  // width of the hexagon
+		margin: 0,		// spacing between hexagon
+		threshold: 3  	// hide placeholder hexagons when number of hexagons in a row is more than the threshold number
+	});
+});
+</script>
+
 ```
+
