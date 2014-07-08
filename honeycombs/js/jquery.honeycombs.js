@@ -151,7 +151,7 @@
                 
                 
                 $wrapper
-                    .height((row + 1) * (combHeight + settings.margin) + combHeight / 2)
+                    .height(top + combHeight)
                     .width(maxLeft - settings.margin)
             }
             
