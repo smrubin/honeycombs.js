@@ -36,11 +36,7 @@
                 
                 $(element).find('.comb').each(function(){
                     num = num + 1;
-                    // var image = $(this).find('img').attr('src');
-                    // var css = 'url("'+image+'") ';
-                    
-                    // $(this).find('.icon-hex-lg').attr('style', 'color: '+settings.background);
-                    
+
                     if($(this).find('.inner').length > 0){
                         $(this).find('.inner.front .wrapper').html($(this).find('.front-content').html());
                         $(this).find('.inner.back .wrapper').html($(this).find('.back-content').html());
@@ -51,6 +47,7 @@
                     };
                 });
 
+                // Fix Firefox padding error
                 if (navigator.userAgent.search("Firefox") > -1) { 
                     $('.comb span').addClass('firefox');
                 }
@@ -62,11 +59,8 @@
             function updateScales(){
                 combWidth = settings.combWidth;
                 combHeight = combWidth;
-                
-                
                 $(element).find('.comb').width(combWidth).height(combHeight);
                 $(element).find('.icon-hex-lg').css('font-size', combWidth)
-                $(element).find('.hex_inner').width(combWidth).height(combHeight);
             }
             
             /**
@@ -136,7 +130,6 @@
                         if(left + combWidth > width){
                             row = row + 1;
                             offset = leftHandler(offset);
-                            // offset = (offset + 1) % 2;
                             left = offset / 2 * ( combWidth + settings.margin ) ;
                         }
 
