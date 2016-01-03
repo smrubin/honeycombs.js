@@ -3,13 +3,13 @@ Honeycombs.js
 
 A modified version of mstrehse's & Tiotao's Honeycombs jQuery Plugin. It produces responsive hexagon grids for both vertical and horizontal orientations.
 
-Vertical Orientation
+### Vertical Orientation
 
-![Demo Image](https://github.com/smrubin/honeycombs/master/honeycombs-vertical.png)
+![Demo Image](https://github.com/smrubin/honeycombs.js/blob/master/honeycombs-vertical.png)
 
-Horizontal Orientation
+### Horizontal Orientation
 
-![Demo Image](https://github.com/smrubin/honeycombs/master/honeycombs-horizontal.png)
+![Demo Image](https://github.com/smrubin/honeycombs.js/blob/master/honeycombs-horizontal.png)
 
 ## Original
 - Author(s): mstrehse, Tiotao
