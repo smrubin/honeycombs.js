@@ -1,22 +1,25 @@
 Honeycombs.js
 ========================
 
-A modified version of mstrehse's Honeycombs jQuery Plugin. It produces responsive hexagon grids.
+A modified version of mstrehse's & Tiotao's Honeycombs jQuery Plugin. It produces responsive hexagon grids for both vertical and horizontal orientations.
 
-![Demo Image](https://raw.githubusercontent.com/Tiotao/honeycombs/master/demo.png)
+Vertical Orientation
+
+![Demo Image](https://raw.githubusercontent.com/smrubin/honeycombs/master/honeycombs-vertical.png)
+
+Horizontal Orientation
+
+![Demo Image](https://raw.githubusercontent.com/smrubin/honeycombs/master/honeycombs-horizontal.png)
 
 ## Original
-- Author: mstrehse
-- Repo: https://github.com/mstrehse/honeycombs
-- Example: http://examples.rabbid.net/honeycombs/demo.html
+- Author(s): mstrehse, Tiotao
+- Repo: https://github.com/mstrehse/honeycombs, https://github.com/tiotao/honeycombs
 
 ## Modifications
-- No longer support hexagon with background image as the hexagon is now made by iconic font rather than CSS.
+- Different equations used to calculate width and spacing of the combs for both vertical and horizontal orientations.
 
 ## Improvements
-- Support IE8
-- Responsive for single column orientation (in mobile screens)
-- placehoder class provides more flexibility in arranging hexagons.
+- Ability for users to orient the combs (hexagons) vertically or horizontally and maintain responsive layout.
 
 ## Usage
 To generate a honeycomb grid, use the following markup:
@@ -49,9 +52,9 @@ and add the following code at the end of the `<body>` tag
 <script>
 	$(document).ready(function() {
 	$('.honeycombs').honeycombs({
-		combWidth:250,  // width of the hexagon
+		combWidth:250,  	// width of the hexagon
 		margin: 0,		// spacing between hexagon
-		threshold: 3  	// hide placeholder hexagons when number of hexagons in a row is more than the threshold number
+		horizontal: false  	// option to orient the hexagons horizontally
 	});
 });
 </script>
