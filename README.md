@@ -5,11 +5,11 @@ A modified version of mstrehse's & Tiotao's Honeycombs jQuery Plugin. It produce
 
 Vertical Orientation
 
-![Demo Image](https://raw.githubusercontent.com/smrubin/honeycombs/master/honeycombs-vertical.png)
+![Demo Image](https://github.com/smrubin/honeycombs/master/honeycombs-vertical.png)
 
 Horizontal Orientation
 
-![Demo Image](https://raw.githubusercontent.com/smrubin/honeycombs/master/honeycombs-horizontal.png)
+![Demo Image](https://github.com/smrubin/honeycombs/master/honeycombs-horizontal.png)
 
 ## Original
 - Author(s): mstrehse, Tiotao
