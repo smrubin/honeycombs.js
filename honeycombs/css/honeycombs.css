@@ -3,7 +3,6 @@
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
-
 }
 
 .honeycombs * {
@@ -25,23 +24,15 @@
 }
 
 .comb .icon-hex-lg {
-	color: #26A196;
+   color: rgba(6, 78, 128, 0.6);
 }
 
 .comb.placeholder{
 	cursor: default;
 }
 
-.comb span.firefox {
-	left: 0;
-    position: absolute;
-    top: 20px;
-    z-index: -1;
-}
-
-
 .comb.placeholder span {
-	color: #FFF !important;
+	color: #fff !important;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity= 0);
 	-moz-opacity: 0;
@@ -69,6 +60,7 @@
 	backface-visibility: hidden;
 	-moz-perspective: 1000;
 	perspective: 1000;
+	z-index: 2;
 }
 
 .comb .inner .wrapper {
@@ -82,7 +74,6 @@
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity: 0;
-	
 }
 
 
@@ -103,8 +94,7 @@
 }
 
 .comb:hover > span {
-	color: #FF6493 !important;
-
+    color: rgba(255, 139, 0, 1.0) !important; 
 }
 
 .comb.placeholder:hover > span {
@@ -114,13 +104,12 @@
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity: 0;
-
 }
 
 .comb .inner p {
 	font-size: 14px;
 	line-height: 1.2;
-	color: white;
+	color: #fff;
 }
 
 .comb .inner.back .wrapper {
@@ -155,4 +144,15 @@
 
 .icon-hex-lg:before {
 	content: "\e604";
+}
+
+.horizontal:before {
+	content: "\e604";
+  	display: inline-block;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	z-index: 1;  
 }
